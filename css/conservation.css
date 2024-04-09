@@ -1,0 +1,138 @@
+h2,p {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 0em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 20px;
+  }
+  .image-gallery-container{
+    max-width: 1224px;
+    width:90% ;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .heading{
+    margin-bottom: 2rem;
+  }
+  .image-gallery{
+    display: flex;
+    gap: 10px;
+ }
+  .image-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius:5px ;
+     object-fit:cover ;
+  }
+  @media(max-width: 768px){
+    .image-gallery{
+      flex-direction: column;
+    }
+  }
+  .photo {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.photo::after {
+    content: attr(data-info);
+    position: absolute;
+    font-size: 2vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(228, 251, 53, 0.847);
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo:hover::after {
+    opacity: 1;
+}
+
+.location{
+  display: flex;
+  justify-content:center;
+
+}
+
+.collage-container{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.paragraph3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paragraph3 img {
+  max-width: 65%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph3 {
+    flex-direction: column;
+  }
+
+  .paragraph3 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .paragraph3 {
+    flex-direction: column;
+  }
+
+  .paragraph3 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.location-title{
+  margin-bottom: 2rem;
+}
+    
+  
+
+            
+        
+    

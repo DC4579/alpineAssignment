@@ -1,0 +1,123 @@
+h2,p {
+  display: block;
+  list-style-type: disc;
+  margin-block-end: 0em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  padding-inline-start: 20px;
+}
+.image-gallery-container{
+  max-width: 1224px;
+  width:90% ;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading{
+  margin-bottom: 2rem;
+}
+.image-gallery{
+  display: flex;
+  gap: 10px;
+}
+.image-column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  border-radius:5px ;
+   object-fit:cover ;
+}
+
+
+.location{
+display: flex;
+justify-content:center;
+
+}
+
+.collage-container{
+display: flex;
+justify-content: center;
+
+}
+
+.paragraph3 {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.paragraph3 img {
+max-width: 65%;
+height: 90%;
+display: flex;
+justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+.paragraph3 {
+  flex-direction: column;
+}
+
+.paragraph3 img {
+  max-width: 100%;
+  height: auto;
+}
+}
+@media screen and (max-width: 480px) {
+.paragraph3 {
+  flex-direction: column;
+}
+
+.paragraph3 img {
+  max-width: 100%;
+  height: auto;
+}
+}
+@media screen and (max-width: 600px) {
+  .map iframe {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .map iframe {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.location-title{
+margin-bottom: 2rem;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+}
+
+/* Ensure table is 100% width */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse; /* Optional: for removing double borders */
+}
+
+/* Add borders to the table and the cells */
+.table-container table, .table-container th, .table-container td {
+  border: 1px solid black;
+}
+
+  
