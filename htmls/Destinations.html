@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations</title>
+    <link rel="icon" href="../fav.io/android-chrome-192x192.png"
+      type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet">
+    <link href='../css/header_and_footer-destination.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/Destinations.css">
+
+    <link rel="manifest" href="manifest.json">
+    <script src="HOME.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    
+<div x-data="destinations">
+    <img src="../img/elephant eating.jpg" alt="Wallpaper"
+    class="responsive">
+    <h2 x-text="maintitle" class="headname"></h2>
+
+
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="Wildlife.html">Wild Life</a>
+      <a href="Srilankan_Leopard.html">Leopard</a>
+      <a href="conservation.html">Conservation</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Yala_national_Park.html">Yala National Park</a>
+      <a href="Willpattu_National_Park.html">Wilpattu National park</a>
+      <a href="Contact_Us.html">Login</a>
+    </nav>
+    <nav class="top-right">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+      </span>
+    </nav>
+
+    <nav id="myTopnav">
+      <ul>
+        <li><a class="navw" href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="navw" href="Wildlife.html">Wild Life</a>
+          <ul class="dropdown-content">
+            <li><a class="navw" href="Srilankan_Leopard.html">Leopard</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="navw" href="Destinations.html">Destinations</a>
+          <ul class="dropdown-content">
+            <li><a class="navw" href="Yala_national_Park.html">Yala National
+                Park</a></li>
+            <li><a class="navw" href="Willpattu_National_Park.html">Wilpattu
+                National park</a></li>
+          </ul>
+        </li>
+        <li><a class="navw" href="conservation.html">Conservation</a></li>
+
+        <li><a class="navw" href="Contact_Us.html">Login</a></li>
+      </ul>
+    </nav>
+    <figure class="logo">
+      <img src="../img/logo.png" alt="Logo ">
+    </figure>
+
+  
+
+      <section class="grid-container">
+       
+        
+        <h2 x-text="topic1"></h2><!--topic1-->
+
+        <article class="paragraph">
+          <p x-html="description1">
+          </p><!--description1-->
+
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6740385671706!2d80.79975837499546!3d6.809445993188088
+         !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park
+         !5e0!3m2!1sen!2slk!4v1705309545475!5m2!1sen!2slk" width="400"
+              height="300" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+        </article>
+        <section class="images">
+          <img src="../img/Horton-Plains-National-worlds end.jpg" alt="Image 1">
+          <img src="../img/pond in Hortain Plains.jpg" alt="Image 2">
+          <img src="../img/Sambar-horton plains.jpg" alt="Image 3">
+        </section>
+
+        <h2 x-text="topic2"></h2><!--topic2-->
+        <article class="paragraph">
+          <p x-html="description2">
+          </p><!--description2-->
+
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31630.168242552703!2d79.
+            7981641065335!3d7.707701807828144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afd34
+            7d55d9cba1%3A0xd89ea7c86e97372b!2sAnawilundawa%20Wetland!5e0!3m2!1sen!2slk!4v1705320561189!5m2!
+            1sen!2slk" width="400" height="300" style="border:0;"
+              allowfullscreen loading="lazy" referr
+              erpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+        </article>
+        <section class="images">
+          <img src="../img/Anawilundawa-Birds-on a pond.jpg" alt="Image 1">
+          <img src="../img/Anawilundawa_greenary.jpeg" alt="Image 2">
+          <img src="../img/anawilundawa birds.jpg" alt="Image 3">
+        </section>
+
+        <h2 x-text="topic3"> </h2><!--topic2-->
+        <article class="paragraph">
+          <p x-html="description3">
+          </p><!--description3-->
+
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15859.
+                         596626391387!2d80.4600266!3d6.4069908!3m2!1i1024!2i768!4f13.
+                         1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve
+                         !5e0!3m2!1sen!2slk!4v1705322525713!5m2!1sen!2slk"
+              width="600" height="450" style="border:0;"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+        </article>
+        <section class="images">
+          <img src="../img/Sinharaja-Forest-.jpg" alt="Image 1">
+          <img src="../img/sinharaja sign final.png" alt="Image 2">
+          <img src="../img/blue magpie.jpeg" alt="Image 3">
+        </section>
+        <h2 x-text="topic4"> </h2><!--topic3-->
+        <article class="paragraph">
+          <p x-html="description4">
+          </p><!--description4-->
+
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317
+               16.101281456326!2d80.8619336!3d6.4565381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3
+              ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!
+              4v1705606775522!5m2!1sen!2slk" width="600" height="450"
+              style="border:0;" allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+        </article>
+        <section class="images">
+          <img src="../img/elephant upclose.jpg" alt="Image 1">
+          <img src="udawalwe animals.jpg" alt="Image 2">
+          <img src="../img/sri-lankan-leopard walking.jpg" alt="Image 3">
+        </section>
+
+        <section class="table-container">
+          <table>
+          </thead>
+          <tbody>
+            <template x-for="row in table" :key="row['Animal Most Seen']">
+              <tr>
+                <td x-html="row['Animal Most Seen']"></td>
+                <td x-html="row['Location Type']"></td>
+                <td x-html="row['Best Time to Visit']"></td>
+                <td x-html="row['Description']"></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+    <style>
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px); 
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .popup-content {
+        background-color:#b5bc76bd;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+        overflow: auto;
+        max-height: 80vh; 
+        overflow-y: auto;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+  </style>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2>Edit Content</h2>
+        <ul id="topicsedit"></ul>
+        <div id="paragrapghedit"></div>
+        <button onclick="saveChanges()">Save Changes</button>
+      </div>
+    </div>
+
+    <script>
+      //creating the structre of the data object
+      const destinations ={
+          maintitle: '',
+          intro: '',
+          
+          topic1: '',
+          description1: '',
+      
+          topic2: '',
+          description2: '',
+      
+          topic3: '',
+          description3: '',
+      
+          topic4: '',
+          description4: '',
+
+          table:[],
+          
+          
+          
+         
+      
+      
+      
+      };
+      //fetch the json data 
+      fetch('Destinations.json')
+          .then(response => response.json())
+          .then(data => {
+            destinations.maintitle= data.maintitle;
+            
+      
+            destinations.topic1 = data.topic1;
+            destinations.description1=data.description1
+           
+      
+            destinations.topic2 = data.topic2;
+            destinations.description2=data.description2
+         
+      
+      
+            destinations.topic3 = data.topic3;
+            destinations.description3=data.description3;
+           
+      
+            destinations.topic4 = data.topic4;
+            destinations.description4=data.description4;
+
+            destinations.table=data.table;
+
+            localStorage.setItem('destinationspage',JSON.stringify(data));
+         
+      
+            
+           
+            
+         
+         
+      
+          })
+          .catch(error =>console.error('Error fetching data:',error));
+          
+           
+function isLoggedIn() {
+    return localStorage.getItem("loggedInUser") !== null;
+}
+
+
+function toggleEditButtonVisibility() {
+    var editButton = document.getElementById("editButton");
+    editButton.style.display = isLoggedIn() ? "block" : "none";
+}
+
+
+toggleEditButtonVisibility();
+      
+      
+      </script>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="Login.js"></script>
+
+  </body>
+  <footer>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">×</span>
+          <h2>Edit Content</h2>
+          <ul id="topicsedit"></ul>
+          <div id="paragrapghedit"></div>
+          <button onclick="saveChanges()">Save Changes</button>
+      </div>
+  </div>
+
+  <button id="editButton" onclick="openPopup()"
+      style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+    <section class="footer">
+      <section class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </section>
+
+      <section class="row">
+        <ul>
+          <li><a href="Contact_Us.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <section class="footer-newsletter">
+            <br>
+            <form onsubmit="storeNewsLetter(); return false;" class="newsletter-form">
+              <input type="email" id="newsLet" placeholder="subscribe to our NewsLetter" required>
+              <button type="submit"> Subscribe</button>
+    
+          </form>
+          </section>
+
+        </ul>
+      </section>
+      <section class="row">
+        Wild Life Wonders Copyright © 2023 WLW - All rights reserved || Designed 
+        By: CB014172 Dulith
+      </section>
+    </section>
+  </footer>
+  <script>
+  
+    function openPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+
+      
+
+      // Fetch and display paragraphs
+      var paragrapghedit = document.getElementById("paragrapghedit");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol,td");
+      paragraphs.forEach(function (paragraph) {
+        var editableParagraph = document.createElement("div");
+        editableParagraph.contentEditable = true;
+        editableParagraph.textContent = paragraph.textContent;
+        paragrapghedit.appendChild(editableParagraph);
+        paragrapghedit.appendChild(document.createElement("br")); 
+      });
+    }
+
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+      document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+    }
+
+    function saveChanges() {
+      // Update the content of paragraphs on the main page
+      var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol,td");
+      editedParagraphs.forEach(function (editedParagraph, index) {
+        paragraphs[index].textContent = editedParagraph.textContent;
+      });
+
+     
+    }
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+      document.getElementById("paragrapghedit").innerHTML = ""; 
+    }
+
+    function saveChanges() {
+      
+      var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol,td");
+      editedParagraphs.forEach(function (editedParagraph, index) {
+        paragraphs[index].textContent = editedParagraph.textContent;
+      });
+
+     
+      closePopup();
+    }
+
+    function editListItem(index, newValue) {
+      var listItems = document.querySelectorAll("ul li, ol li");
+      listItems[index].textContent = newValue;
+    }
+
+    function saveToLocalStorage(key, value) {
+      localStorage.setItem(key, value);
+    }
+
+
+
+
+  </script>
+  <!-- Resources
+      Anawilundawa Wetland Sanctuary | Attractions in Chilaw .... https://www.lovesrilanka.org/anawilundawa-wetland-sanctuary/.
+     Horton Plains National Park - Wikipedia. https://en.wikipedia.org/wiki/Horton_Plains_National_Park.
+     Anawilundawa Wetland Sanctuary - All You Need to Know .... https://www.tripadvisor.com/Attraction_Review-g2550424-d9842549-Reviews-Anawilundawa_Wetland_Sanctuary-Chilaw_North_Western_Province.html.
+     Anawilundawa Sanctuary | Bird Watching in Sri Lanka. https://www.bestoflanka.com/wildlife-safaris-anawilundawa-bird-sanctuary-sri-lanka.php?lId=01.
+     Anawilundawa Sanctuary | AmazingLanka.com. https://amazinglanka.com/wp/anawilundawa-sanctuary/.
+      Udawalawe National Park - Wikipedia. https://en.wikipedia.org/wiki/Udawalawe_National_Park.
+      How To Visit The Incredible Udawalawe National Park - The Common Wanderer. https://www.thecommonwanderer.com/blog/udawalawe-national-park-safari-sri-lanka.
+      A complete guide to visiting Udawalawe national park, Sri Lanka. https://www.curiousgoosetravel.com/post/visiting-udawalawe-national-park.
+      Udawalawe National Park - Udawalawe National Park Safari / The Best .... https://udawalaweusafari.com/udawalawe-national-park/.
+    (1) Sinharaja Forest Reserve. https://www.sinharajaforestreserve.com/.
+(2) Sinharaja Forest Reserve - Wikipedia. https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve.
+(3) Sinharaja Forest Reserve - UNESCO World Heritage Centre. https://whc.unesco.org/en/list/405.
+(4) Sinharaja Forest Reserve | Wonders of Ceylon. https://www.wondersofceylon.com/sinharaja-forest/.
+(5) Sinharaja Forest | For UNESCO World Heritage Travellers. https://www.worldheritagesite.org/list/Sinharaja+Forest.
+(6) . https://bing.com/search?q=Udawalawe+National+Park.
+(7) Udawalawe National Park. http://www.udawalawenationalpark.com/.
+(8) Udawalawe National Park. https://udawalawanationalparksafari.blogspot.com/.
+(9) Home - Udawalawe National Park Safari / The Best Jeep Safari #1. https://udawalaweusafari.com/.
+(10) Udawalawe National Park - Wikipedia. https://en.wikipedia.org/wiki/Udawalawe_National_Park.
+(11) Udawalawe National Park - All You Need to Know BEFORE You ... - Tripadvisor. https://www.tripadvisor.com/Attraction_Review-g674587-d447524-Reviews-Udawalawe_National_Park-Udawalawe_National_Park.html.
+(12) A Comprehensive Guide To Udawalawe National Park, Sri Lanka. https://traveltriangle.com/blog/udawalawe-national-park/.
+(13) . https://bing.com/search?q=Horton+Plains+National+Park.
+(14) Horton Plains National Park. http://www.dwc.gov.lk/Aoldsite/library/Np_Hotonplains.htm-->
+</html>

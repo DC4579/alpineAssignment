@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="../fav.io/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="your-login-js-file.js"></script>
+    <link href='../css/Dashboard.css' rel='stylesheet'>
+    <link rel="manifest" href="manifest.json">
+    <script src="HOME.js"></script>
+</head>
+<h1 class="maintitle">Welcome to WILD Life Wonders</h1>
+  <h3 class="greeting-message"></h3>
+<body>
+    <div class="container">
+        <a href="index.html" class="box">
+            <img src="../img/aliya and lil Ali.jpg" alt="Image 1">
+            <div class="title">Home Page</div>
+        </a>
+        <a href="Wildlife.html" class="box">
+            <img src="../img/blue magpie.jpeg" alt="Image 2">
+            <div class="title">Wildlife</div>
+        </a>
+        <a href="Srilankan_Leopard.html" class="box">
+            <img src="../img/leopard resting tree.jpeg" alt="Image 3">
+            <div class="title">Sri Lankan Leopard</div>
+        </a>
+        <a href="Destinations.html" class="box">
+            <img src="../img/Hakgala Strict nature reserve.jpg" alt="Image 4">
+            <div class="title">Destinations</div>
+        </a>
+        <a href="Yala_national_Park.html" class="box">
+            <img src="../img/elephants charge.jpeg" alt="Image 5">
+            <div class="title">Yala National Park</div>
+        </a>
+        <a href="conservation.html" class="box">
+            <img src="../img/sinharaja sign final.png" alt="Image 6">
+            <div class="title">conservation</div>
+        </a>
+    </div>
+    <div id="subscription-table-container"></div>
+   <div id="new-user-table-container"></div> 
+    
+  <script>
+    
+    function displayGreetingMessage() {
+    var loggedInUser = localStorage.getItem("loggedInUser");
+    if (loggedInUser) {
+        var greetingMessage = "Welcome back, " + loggedInUser + "!"; 
+        $(".greeting-message").text(greetingMessage);
+    }
+}
+
+
+$(document).ready(function () {//calls each function when document is ready
+        displayGreetingMessage();
+        displaySubscriptionTable();
+        display_new_user_Table(); 
+    });
+
+    
+    function displaySubscriptionTable() {
+       
+        let subscriptions = JSON.parse(localStorage.getItem("newsLetter")) || [];
+
+       
+        var isAdmin = localStorage.getItem("loggedInUser") === "admin";
+
+      
+        if (subscriptions.length === 0) {
+            console.log("No subscriptions found.");
+            return;
+        }
+
+       
+        var table = document.createElement("table");
+        table.border = "1";
+        table.style.marginTop = "20px";
+
+        
+        var headerRow = table.insertRow();
+        var headerCell = headerRow.insertCell();
+        headerCell.textContent = "Subscribed Emails";
+        headerCell.style.fontWeight = "bold";
+
+        /* Create table rows for each subscription email*/
+        subscriptions.forEach(function (subscription) {
+            var row = table.insertRow();
+            var cell = row.insertCell();
+            cell.textContent = subscription.email;
+        });
+
+        
+        if (isAdmin) {
+            
+            var container = document.getElementById("subscription-table-container");
+            container.innerHTML = ""; // Clear previous content
+            container.appendChild(table);
+        }
+    }
+    function display_new_user_Table() {
+    
+    let newUsers = JSON.parse(localStorage.getItem("new-users")) || [];
+
+    
+    var isAdmin = localStorage.getItem("loggedInUser") === "admin";
+
+  
+    if (newUsers.length === 0) {
+        console.log("No new users found.");
+        return;
+    }
+
+    
+    var table = document.createElement("table");
+    table.border = "1";
+    table.style.marginTop = "20px";
+
+    // Create table header
+    var headerRow = table.insertRow();
+    var emailHeaderCell = headerRow.insertCell();
+    emailHeaderCell.textContent = "New_user_Emails";
+    emailHeaderCell.style.fontWeight = "bold";
+    var usernameHeaderCell = headerRow.insertCell();
+    usernameHeaderCell.textContent = "Username";
+    usernameHeaderCell.style.fontWeight = "bold";
+
+    
+    newUsers.forEach(function (user) {
+        var row = table.insertRow();
+        var emailCell = row.insertCell();
+        emailCell.textContent = user.email;
+
+        var usernameCell = row.insertCell();
+        usernameCell.textContent = user.name;
+    });
+
+   
+    if (isAdmin) {
+        
+        var container = document.getElementById("new-user-table-container");
+        container.innerHTML = ""; // Clear previous content
+        container.appendChild(table);
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+[
+    {
+      "username": "admin",
+      "password": "admin",
+      "role":"admin",
+      "email": "admin@admin.com"
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "role":"site_user",
+      "email": "test@test.com"
+
+    },
+    {
+      "username": "user",
+      "password": "user",
+      "role":"site_user",
+      "email": "user@user.com"
+      
+    },
+    {
+      "username": "newuser",
+      "password": "newuser",
+      "role":"site_user",
+      "email": "user@new.com"
+      
+    }
+  ]

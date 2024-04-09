@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login</title>
+    <link rel="icon" href="../fav.io/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link href='../css/Contactus CSS.css' rel='stylesheet'>
+    <link rel="manifest" href="manifest.json">
+    <script src="HOME.js"></script>
+    <main>
+      
+    </main>
+  </head>
+<body>  
+   
+<section class="grid-container"> 
+    <img src="../img/sunset3.jpg" alt="Wallpaper" class="responsive"> 
+    
+    <div id="create-account-popup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h2>Create New Account</h2>
+          <form class="create-account-form" action="#">
+              <section class="input-row">
+                  <label for="name">User Name</label>
+                  <input type="name" id="new-Name" name="new-Name" required>
+              </section>
+              <section class="input-row">
+                  <label for="new-email">Email</label>
+                  <input type="email" id="new-email" name="new-email" required>
+              </section>
+              <section class="input-row">
+                  <label for="new-password">Password</label>
+                  <input type="password" id="new-password" name="new-password" required>
+              </section>
+              <section class="input-row">
+                <label for="confirm-password">Retype Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </section>
+              <button type="submit">Create Account</button>
+          </form>
+      </div>
+  </div>
+
+  <section class="contact-box">
+      
+      <h2>Login</h2>
+    <form class="login-form">
+        <section class="input-row">
+            <label for="login-username-email">Your Name or Email</label>
+            <input type="text" id="login-username-email" name="login-username-email" required>
+        </section>
+        <section class="input-row">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="login-password" required>
+        </section>
+        <button id="loginButton" type="submit">Login</button>
+        <p><a href="#" id="create-account-link">Create new account</a><br><br>
+            </p>
+    </form>
+  </section>
+</section>
+    
+    
+
+
+
+</section>
+
+    
+   
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="Wildlife.html">Wild Life</a>
+      <a href="Srilankan_Leopard.html">Leopard</a>
+      <a href="conservation.html">Conservation</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Yala_national_Park.html">Yala National Park</a>
+      <a href="Willpattu_National_Park.html">Wilpattu National park</a>
+      <a href="Contact_Us.html">Login</a>
+    </nav>
+  <nav class="top-right">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  </nav>
+    
+    <nav id="myTopnav">
+      <ul>
+        <li><a class="navw" href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="navw" href="Wildlife.html">Wild Life</a>
+          <ul class="dropdown-content">
+              <li><a class="navw" href="Srilankan_Leopard.html">Leopard</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a class="navw" href="Destinations.html">Destinations</a>
+        <ul class="dropdown-content">
+            <li><a class="navw" href="Yala_national_Park.html">Yala National Park</a></li>
+            <li><a  class="navw"href="Willpattu_National_Park.html">Wilpattu National park</a></li>
+         </ul>
+      </li>
+        <li><a class="navw"href="conservation.html">Conservation</a></li>
+        
+       <li><a class="navw" href="Contact_Us.html">Login</a></li>
+      </ul>
+  </nav>
+    <figure class="logo">
+        <img src="../img/logo.png" alt="Logo " >
+        </figure>
+
+     
+  
+     
+
+    
+        
+      
+
+          
+
+    
+  
+      
+        
+   
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="Login.js"></script>
+    
+</body>
+
+<footer>
+  <section class="footer">
+  <section class="row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </section>
+  
+  <section class="row">
+    <ul>
+      <li><a href="Contact_Us.html">Login</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Destinations.html">Destinations</a></li>
+      <section class="footer-newsletter">
+        <br>
+        <form onsubmit="storeNewsLetter(); return false;" class="newsletter-form">
+          <input type="email" id="newsLet" placeholder="subscribe to our NewsLetter" required>
+          <button type="submit"> Subscribe</button>
+
+      </form>
+      </section>
+    
+    
+    </ul>
+    </section>
+  <section class="row">
+  Wild Life Wonders Copyright © 2023  WLW - All rights reserved || Designed By: CB014172 Dulith
+  </section>
+  </section>
+  </footer>
+</html>

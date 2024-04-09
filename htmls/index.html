@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+    <title>HomePage</title>
+    <link rel="icon" href="../fav.io/android-chrome-192x192.png"
+      type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet">
+    <link href='../css/Home CSS.css' rel='stylesheet'>
+    <link rel="manifest" href="manifest.json">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script
+      src="HOME.js"></script><!--js code link to operate the side menu and make the main menu disappear-->
+
+    <section class="grid-container">
+      <img src="../img/infant elephant playing with older elephant.png"
+        alt="Wallpaper" class="responsive">
+      <!--This is a responsive main image-->
+
+      <nav id="mySidenav"
+        class="sidenav"><!--THis is the side navigation bar that will pop up with a hamburger menu-->
+        <a href="javascript:void(0)" class="closebtn"
+          onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Wildlife.html">Wild Life</a>
+        <a href="Srilankan_Leopard.html">Leopard</a>
+        <a href="conservation.html">Conservation</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="Yala_national_Park.html">Yala National Park</a>
+        <a href="Willpattu_National_Park.html">Wilpattu National park</a>
+        <a href="Contact_Us.html">Login</a>
+      </nav>
+      <nav class="top-right">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+        </span>
+      </nav>
+
+      <nav id="myTopnav">
+        <ul>
+          <li><a class="navw" href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="navw" href="Wildlife.html">Wild Life</a>
+            <ul class="dropdown-content">
+              <li><a class="navw" href="Srilankan_Leopard.html">Leopard</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navw" href="Destinations.html">Destinations</a>
+            <ul class="dropdown-content">
+              <li><a class="navw" href="Yala_national_Park.html">Yala National
+                  Park</a></li>
+              <li><a class="navw" href="Willpattu_National_Park.html">Wilpattu
+                  National park</a></li>
+            </ul>
+          </li>
+          <li><a class="navw" href="conservation.html">Conservation</a></li>
+
+          <li><a class="navw" href="Contact_Us.html">Login</a></li>
+        </ul>
+      </nav>
+      <figure class="logo">
+        <img src="../img/logo.png" alt="Logo ">
+      </figure>
+
+    </section>
+    <style>
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px); 
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .popup-content {
+            background-color:#b5bc76bd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            overflow: auto;
+            max-height: 80vh; 
+            overflow-y: auto;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  
+  </head>
+  <body>
+    <div x-data="indexContent">
+      <h2 x-text="maintitle" class="headname"> </h2><!--maintitle-->
+
+      <h3><p x-html="intro" class="introduction"><!--inroduction--></p></h3>
+
+      <h2 x-text="topic1"></h2><!--Topic1-->
+      <article class="paragraph">
+        <p x-html="description1"></p><!--description1-->
+        <img src="../img/Horton-Plains-Trek-Activities-in-Nuwara-Eliya.jpg"
+          alt="Hortain Plains">
+
+      </article>
+
+      <section class="Home">
+        <home_animation class="anime5"><!--This is a css animation-->
+
+        </home_animation>
+      </section>
+
+      <h2 x-html="topic2"></h2><!--Topic2-->
+      <article class="paragraph1">
+        <p x-html="description2"></p>
+        <ul>
+          <template x-for="(item, index) in list1" :key="index">
+            <li x-html="item"></li>
+          </template>
+        </ul>
+
+        <img
+          src="../img/Infant-Hog-Deer-bottle-fed-by-WCSG-members-2-768x512.jpg"
+          alt="Infant baby deer been fed">
+
+        <!--list1-->
+      </article>
+
+      <h2 x-text="topic3"></h2><!--Topic3-->
+      <article class="paragraph">
+        <p x-html="description3"></p><!--description3-->
+
+        <ol>
+          <template x-for="(item, index) in list2" :key="index">
+            <li x-html="item"></li>
+          </template> <!--list2-->
+        </ol>
+        <img src="../img/feeding elephant.jpg"
+          alt="elephant been fed by tourist">
+
+      </article>
+
+    </div>
+    
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2>Edit Content</h2>
+        <ul id="topicsedit"></ul>
+        <div id="paragrapghedit"></div>
+        <button onclick="saveChanges()">Save Changes</button>
+      </div>
+    </div>
+  
+    <button id="editButton" onclick="openPopup()" style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+  
+
+  </body>
+
+  <script>
+  
+  
+  const indexContent ={
+      maintitle: '',
+      intro: '',
+      
+      topic1: '',
+      description1: '',
+
+      topic2: '',
+      description2: '',
+
+      list1: [],
+
+      topic3: '',
+      description3: '',
+
+      list3: []
+
+
+  };
+ //fetch the json data 
+ fetch('index.json')
+      .then(response => response.json())
+      .then(data => {
+        indexContent.maintitle= data.maintitle;
+        indexContent.intro = data.intro;
+        indexContent.topic1 = data.topic1;
+        indexContent.description1=data.description1
+        indexContent.topic2 = data.topic2;
+        indexContent.description2=data.description2
+        indexContent.list1=data.list1
+        indexContent.topic3 = data.topic3;
+        indexContent.description3=data.description3;
+        indexContent.list2 = data.list2;
+
+        localStorage.setItem('index',JSON.stringify(data));
+          
+      })
+      .catch(error =>console.error('Error fetching data:',error));
+      
+function isLoggedIn() {
+    return localStorage.getItem("loggedInUser") !== null;
+}
+
+
+function toggleEditButtonVisibility() {
+    var editButton = document.getElementById("editButton");
+    editButton.style.display = isLoggedIn() ? "block" : "none";
+}
+
+
+toggleEditButtonVisibility();
+
+    
+  
+
+     
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Login.js"></script>
+ 
+  <section class="footer">
+    <section class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+
+      <section class="row">
+
+        <ul>
+          <li><a href="Contact_Us.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <section class="footer-newsletter">
+            <br>
+            <form onsubmit="storeNewsLetter(); return false;" class="newsletter-form">
+              <input type="email" id="newsLet" placeholder="subscribe to our NewsLetter" required>
+              <button type="submit"> Subscribe</button>
+    
+          </form>
+          </section>
+
+        </ul>
+      </section>
+
+      <section class="row">
+        Wild Life Wonders Copyright © 2023 WLW - All rights reserved || Designed
+        By:CB014172 Dulith
+      </section>
+    </section>
+
+  </footer>
+  
+  <body>
+    
+  
+  <script>
+  
+    function openPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+
+      
+
+      
+      var paragrapghedit = document.getElementById("paragrapghedit");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+      paragraphs.forEach(function (paragraph) {
+        var editableParagraph = document.createElement("div");
+        editableParagraph.contentEditable = true;
+        editableParagraph.textContent = paragraph.textContent;
+        paragrapghedit.appendChild(editableParagraph);
+        paragrapghedit.appendChild(document.createElement("br")); // Add a line break
+      });
+    }
+
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+      document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+    }
+
+    function saveChanges() {
+      // Update the content of paragraphs on the main page
+      var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+      editedParagraphs.forEach(function (editedParagraph, index) {
+        paragraphs[index].textContent = editedParagraph.textContent;
+      });
+
+      
+    }
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+      document.getElementById("paragrapghedit").innerHTML = ""; 
+    }
+
+    function saveChanges() {
+      
+      var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+      var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+      editedParagraphs.forEach(function (editedParagraph, index) {
+        paragraphs[index].textContent = editedParagraph.textContent;
+      });
+
+      
+      closePopup();
+    }
+
+    function editListItem(index, newValue) {
+      var listItems = document.querySelectorAll("ul li, ol li");
+      listItems[index].textContent = newValue;
+    }
+
+    function saveToLocalStorage(key, value) {
+      localStorage.setItem(key, value);
+    }
+
+
+
+
+  </script>
+  </body>*/
+  <!-- Department of Wildlife Conservation – We Protect Future!. https://www.dwc.gov.lk/.
+ Department of Wildlife Conservation – Ministry of Wildlife and Forest .... https://www.mwfc.gov.lk/department-of-wildlife-conservation/.
+ Wildlife Circuit Bungalows Reservation eService. https://dwc.lankagate.gov.lk/.
+(4) en.wikipedia.org. https://en.wikipedia.org/wiki/Department_of_Wildlife_Conservation_(Sri_Lanka).
+WiKipedia
+yala willpattu official goverment pages-->
+</html>

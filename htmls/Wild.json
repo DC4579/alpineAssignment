@@ -1,0 +1,60 @@
+{
+    "maintitle":"Animals in Srilanka ",
+    "intro":"An indigenous animal is a species of animal that is native to <br> a particular region or ecosystem, and has evolved naturally in that area over time.<br> They are an important part of the ecosystem and are often threatened by human activities.<br><br>indigenous animals in Srilanka",
+     
+
+    "topic1":"1. Sri Lankan Leopard(Panthera pardus kotiya)",
+    "description1":"This is a leopard subspecies found only in Sri Lanka.This leopard has a tawny to rusty yellow-colored coat with rosettes that are smaller than that of the Indian leopards.Males of this subspecies often weigh as much as 100 kg. You can spot them in national parks such as Yala National Park andWilpattu National Park<br><br>Since 2008, the Sri Lankan leopard has been listed as Endangered on the IUCN Red List. The wild population is roughly estimated at 700–950 individuals as of 2015. The Sri Lankan leopard has a tawny or rusty yellow coat with dark spots and close-set rosettes, which are smaller than in Indian leopards.<br>The Sri Lankan leopard has evolved to become a rather large leopard subspecies with very large males reaching almost 220 lb (100 kg), due to the fact that it is an apex predator without competition by other large wild cat species in the country <br><br>",
+    "list1":[
+        "<a href=\"../htmls/Yala_national_Park.html\"><strong>Yala National Park</strong></a><br>",   
+        "<a href=\"../htmls/Willpattu_National_Park.html\"><strong>Wilpattu National Park</strong></a></li><br><!--subtitle2--><li><strong>Sinharaja Forest Reserve</strong><br>"
+    ], 
+
+
+    "topic2":"2. Srilankan Elephant (Elephas maximus maximus)",
+    "description2":"The Sri Lankan elephant is the largest subspecies of the Asian elephant and is native to Sri Lanka. These elephants have a restricted habitat confined to the dry zone in Sri Lanka’s north, east, and southeast.<br><br>With a shoulder height of between 2 and 3.5 meters (6.6 and 11.5 feet) and weighing between 2,000 and 5,500 kilograms (4,400 and 12,100 pounds). They have 19 pairs of ribs and their skin color is darker than that of other subspecies, with larger and more distinct patches of depigmentation on their ears, face, trunk, and belly. <br><br>Only 7% of males bear tusks, which can grow up to 6 feet long and weigh up to 35 kilograms (77 pounds). Sri Lanka has the highest density of elephants in Asia, and they are present in several national parks, including Udawalawe National Park, Yala National Park, Lunugamvehera National Park, Wilpattu National Park, and Minneriya National Park. However, human-elephant conflict is increasing due to the conversion of elephant habitat to settlements and permanent cultivation.",
+    "list2":[
+              
+        "<strong>Yala National Park</strong><br>",
+        " <strong>Udawalawe National Park</strong><br>"
+    ], 
+
+
+    "topic3":"3. Toque Macaque(Macaca sinica)",
+    "description3":"The toque macaque is a primate endemic to Sri Lanka. They live in groups of 8 to 40 members and have a broad diet consisting of flowers, fruits, grains, etc. These monkeys have a highly restricted habitat limited to the island of Sri Lanka and are threatened by habitat destruction, hunting, and capture for the pet trade<br><br>The toque macaque is a reddish-brown-coloured Old World monkey endemic to Sri Lanka, where it is known as the rilewa or rilawa. Its name refers to the whorl of hair at the crown of the head, reminiscent of a brimless toque cap. The toque macaque is the smallest species of Macaca and is listed as endangered by IUCN and in CITES Appendix II.<br><br>They are diurnal herbivores and can grow up to 480 mm. Social status is highly structured in toque macaque troops and dominance hierarchies occur among both males and females. A troop may consist of eight to forty individuals, and the young offspring of a troop’s alpha female will typically receive better sustenance and shelter than their peers. There are three recognized subspecies of toque macaques: Macaca sinica sinica, dry zone toque macaque or common toque macaque; Macaca sinica aurifrons, wet zone toque macaque or pale-fronted toque macaque; and Macaca sinica opisthomelas, highland toque macaque or hill zone toque macaque <br><br>",
+    "list3":[
+            "<strong>Yala National Park</strong><br>",
+            "<strong>Willpattu National Park</strong><br>",
+             "<strong>Udawalawe National Park</strong><br>"
+                 
+    ], 
+
+
+    "topic4":"4. The Sri Lankan Axis Deer",
+    "description4":"I can provide information about the Sri Lankan Axis Deer. The Sri Lankan Axis Deer (Axis axis ceylonessis) is a subspecies of the Axis Deer, also known as the Chital Deer. <br><br>They are found in the dry and intermediate zones of Sri Lanka, and are known for their distinctive white spots on their reddish-brown coat. The Sri Lankan Axis Deer is a herbivore and feeds on grass, leaves, and fruits. They are active during the day and are known to be social animals, living in herds of up to 30 individuals. <br><br>The Sri Lankan Axis Deer is not considered to be endangered, but their population is declining due to habitat loss and hunting . <br><br>",
+    "list4":[
+        "<strong>Yala National Park</strong><br>",
+        "<strong>Willpattu National Park</strong><br>"
+        
+           
+    ] ,
+
+
+    "topic5":"5. The Blue Magpie",
+    "description5":"bird species that is endemic to Sri Lanka. It is a member of the family Corvidae and is known for its bright blue plumage, reddish-brown head, neck, and wing, and a long graduated blue tail with a white tip. The Sri Lanka blue magpie is adapted to hunting in the dense canopy, where it is highly active and nimble<br>It measures 42-47 cm in length, which is larger than a mynah but smaller than a crow The Sri Lanka blue magpie is classified as vulnerable to extinction due to the fragmentation and destruction of its habitat of dense primary forest in the wet zone of southern Sri Lanka. <br><br>",
+    "list5":[
+            "<strong>SinharajaForest reserve</strong>",
+            "<strong>Willpattu National Park</strong>"
+            
+    ] 
+
+
+  
+
+
+   
+
+
+
+
+}    

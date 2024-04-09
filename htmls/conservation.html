@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Conservation</title>
+        <link rel="icon" href="../fav.io/android-chrome-192x192.png"
+            type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+            rel="stylesheet">
+        <link href='../css/header_and_footer-conservation.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/conservation.css">
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <link rel="manifest" href="manifest.json">
+        <script src="HOME.js"></script>
+    </head>
+    <body>
+        <section class="grid-container">
+            <img src="../img/sinharaja Main final.png" alt="Wallpaper"
+                class="responsive">
+
+            <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="Wildlife.html">Wild Life</a>
+                <a href="Srilankan_Leopard.html">Leopard</a>
+                <a href="conservation.html">Conservation</a>
+                <a href="Destinations.html">Destinations</a>
+                <a href="Yala_national_Park.html">Yala National Park</a>
+                <a href="Willpattu_National_Park.html">Wilpattu National
+                    park</a>
+                <a href="Contact_Us.html">Login</a>
+            </nav>
+            <nav class="top-right">
+                <span style="font-size:30px;cursor:pointer"
+                    onclick="openNav()">&#9776; </span>
+            </nav>
+
+            <nav id="myTopnav">
+                <ul>
+                    <li><a class="navw" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="navw" href="Wildlife.html">Wild Life</a>
+                        <ul class="dropdown-content">
+                            <li><a class="navw"
+                                    href="Srilankan_Leopard.html">Leopard</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navw"
+                            href="Destinations.html">Destinations</a>
+                        <ul class="dropdown-content">
+                            <li><a class="navw"
+                                    href="Yala_national_Park.html">Yala National
+                                    Park</a></li>
+                            <li><a class="navw"
+                                    href="Willpattu_National_Park.html">Wilpattu
+                                    National park</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navw"
+                            href="conservation.html">Conservation</a></li>
+
+                    <li><a class="navw" href="Contact_Us.html">Login</a></li>
+                </ul>
+            </nav>
+            <figure class="logo">
+                <img src="../img/logo.png" alt="Logo ">
+            </figure>
+            <section class="wrapper">
+                <header class="header"></header>
+            </section>
+            <style>
+            .popup-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(5px); 
+                display: none;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+            }
+            
+            .popup-content {
+                background-color:#b5bc76bd;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                max-width: 100%;
+                overflow: auto;
+                max-height: 80vh; 
+                overflow-y: auto;
+            }
+            
+            .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+        </style>
+
+            <div x-data="conservation">
+
+                <h2 x-text="maintitle" class="headname"> </h2>
+
+                <h2 x-text="topic1"> </h2>
+                <article class="paragraph">
+                    <p x-html="description1">
+                    </p>
+                    <img src="Wildlife conser logo.jpg"
+                        alt="Srilankan wild life conservation logo">
+                </article>
+                <h2 x-text="heading" class="heading ">Protected Areas</h2>
+                <main class="image-gallery-container">
+
+                    <section class="image-gallery">
+
+                        <section class="image-column">
+                            <section class="photo"
+                                data-info="Strict Nature reserves(Ritigala Strict Nature reserve)">
+                                <img
+                                    src="../img/Ritigala Strict Nature reserve.jpg"
+                                    alt="Ritigala Strict Nature reserve">
+                            </section>
+                            <section class="photo"
+                                data-info="Strict nature reserves(Hakgala Strict nature reserve)">
+                                <img
+                                    src="../img/Hakgala Strict nature reserve.jpg"
+                                    alt="Hakgala Strict nature reserve">
+                            </section>
+                            <section class="photo"
+                                data-info="Nature Reserves(Wedithalathivu Nature Reserve)">
+                                <img src="Wedithalathivu Nature Reserve.jpg"
+                                    alt="Wedithalathivu Nature Reserve">
+                            </section>
+                        </section>
+
+                        <section class="image-column">
+                            <section class="photo"
+                                data-info="Forest corridors(Sinharaja Rain forest)">
+                                <img
+                                    src="../img/Sinharaja rainforest corridor.jpg"
+                                    alt="Sinharaja rainforest corridor">
+                            </section>
+                            <section class="photo"
+                                data-info=" Marine national Parks(Hikkaduwa national park)">
+                                <img
+                                    src="../img/Hikkaduwa Marine national park.jpg"
+                                    alt="Hikkaduwa Marine national park">
+                            </section>
+                            <section class="photo" data-info="Marine Reserves">
+                                <img src="../img/Marine Reserves.webp"
+                                    alt="Marine Reserves">
+                            </section>
+                            <section class="photo"
+                                data-info="Forest reserves(Sinharaja Rain forest waterfall)">
+                                <img
+                                    src="../img/Sinharaja Rain forest waterfall.jpg"
+                                    alt="Sinharaja Rain forest waterfall">
+                            </section>
+                        </section>
+
+                        <section class="image-column">
+                            <section class="photo"
+                                data-info="National Parks(Yala national park)">
+                                <img src="../img/aliya and lil Ali.jpg"
+                                    alt="elephants in Yala">
+                            </section>
+                            <section class="photo"
+                                data-info=" Buffer zones( Sambar Deer in Hortain plains )">
+                                <img
+                                    src="../img/hortain plains buffer zone.jpeg"
+                                    alt="hortain plains buffer zone">
+                            </section>
+                            <section class="photo"
+                                data-info=" Santuaries (Pinnawala elephant santuary)">
+                                <img
+                                    src="../img/Pinnawala elephant santuary.jpg"
+                                    alt="Pinnawala elephant santuary">
+                            </section>
+                            <section class="photo"
+                                data-info="Wilpattu National park(national parks"
+                                )>
+                                <img src="Wilpattu.avif"
+                                    alt="Willpattu national park">
+                            </section>
+                        </section>
+
+                    </section>
+
+                </main>
+                <h2 x-text="topic2"> </h2>
+                <article class="paragraph">
+                    <p x-html="description2">
+                    </p>
+                </article>
+
+                <h2 x-text="topic3"> </h2>
+                <article class="paragraph">
+                    <p x-html="description3">
+                    </article>
+
+                </p>
+
+                <h2 x-text="topic4"></h2>
+                <article class="paragraph">
+                    <p x-html="description4">
+                    </p>
+                </article>
+
+                <article class="paragraph3">
+                    <img class="Collage"
+                        src="../img/Dark Green Elegant Minimalist Our Holiday Photo Collage (1).png"
+                        alt="wild life conservation Collage">
+                </section>
+
+                <h2 class="location-title">Location of the Wild Life
+                    conservation Department </h2>
+
+                <article class="paragraph3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.131955714925!2d79.84358804863277!3d6.897092700000017
+                         !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wil
+                         dlife%20Conservation!5e0!3m2!1sen!2slk!4v1705249013035!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </div>
+            <div class="popup-overlay" id="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">×</span>
+                    <h2>Edit Content</h2>
+                    <ul id="topicsedit"></ul>
+                    <div id="paragrapghedit"></div>
+                    <button onclick="saveChanges()">Save Changes</button>
+                </div>
+            </div>
+
+            <button id="editButton" onclick="openPopup()"
+                style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+            <script>
+                            //creating the structre of the data object
+                            const conservation ={
+                                maintitle: '',
+                               
+                                heading:'',
+                                
+                                topic1: '',
+                                description1: '',
+                            
+                                topic2: '',
+                                description2: '',
+                            
+                                topic3: '',
+                                description3: '',
+                            
+                                topic4: '',
+                                description4: '',
+
+                             
+
+
+                      
+                              
+                                
+                                
+                        };
+                            //fetch the json data 
+                            fetch('conservation.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                  conservation.maintitle= data.maintitle;
+                                  
+                            
+                                  conservation.topic1 = data.topic1;
+                                  conservation.description1=data.description1
+                                  conservation.heading=data.heading
+
+                                 
+                            
+                                  conservation.topic2 = data.topic2;
+                                  conservation.description2=data.description2
+                               
+                            
+                            
+                                  conservation.topic3 = data.topic3;
+                                  conservation.description3=data.description3;
+                                 
+                            
+                                  conservation.topic4 = data.topic4;
+                                  conservation.description4=data.description4;
+
+
+                                  localStorage.setItem('conservation_page',JSON.stringify(data));
+
+                                  
+                               
+
+
+                      
+                                  
+                               
+                            
+                                })
+                                .catch(error =>console.error('Error fetching data:',error));
+                                   
+function isLoggedIn() {
+    return localStorage.getItem("loggedInUser") !== null;
+}
+
+
+function toggleEditButtonVisibility() {
+    var editButton = document.getElementById("editButton");
+    editButton.style.display = isLoggedIn() ? "block" : "none";
+}
+
+
+toggleEditButtonVisibility();
+      
+
+   
+
+                            
+                            
+                            </script>
+                            
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="Login.js"></script>
+
+        </body>
+        <footer>
+            <!--Department of Wildlife Conservation – We Protect Future!. https://www.dwc.gov.lk/.
+(2) Department of Wildlife Conservation – Ministry of Wildlife and Forest .... https://www.mwfc.gov.lk/department-of-wildlife-conservation/.
+(3) Wildlife Circuit Bungalows Reservation eService. https://dwc.lankagate.gov.lk/.
+(4) en.wikipedia.org. https://en.wikipedia.org/wiki/Department_of_Wildlife_Conservation_(Sri_Lanka).
+ 2) Home | SLWCS. https://www.slwcs.org/.
+(3) Wildlife - Sri Lanka. https://srilanka.travel/wildlife.
+(4) en.wikipedia.org. https://en.wikipedia.org/wiki/Department_of_Wildlife_Conservation_(Sri_Lanka).-->
+            <section class="footer">
+                <section class="row">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </section>
+
+                <section class="row">
+                    <ul>
+                        <li><a href="Contact_Us.html">Login</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Destinations.html">Destinations</a></li>
+                        <section class="footer-newsletter">
+                            <br>
+                            <form onsubmit="storeNewsLetter(); return false;" class="newsletter-form">
+                                <input type="email" id="newsLet" placeholder="subscribe to our NewsLetter" required>
+                                <button type="submit"> Subscribe</button>
+                      
+                            </form>
+                        </section>
+
+                    </ul>
+                </section>
+
+                <section class="row">
+                    Wild Life Wonders Copyright © 2023 WLW - All rights reserved
+                    || Designed By: CB014172 Dulith
+                </section>
+            </section>
+        </footer>
+        <script>
+        function openPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+      
+            
+      
+            // Fetch and display paragraphs
+            var paragrapghedit = document.getElementById("paragrapghedit");
+            var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+            paragraphs.forEach(function (paragraph) {
+              var editableParagraph = document.createElement("div");
+              editableParagraph.contentEditable = true;
+              editableParagraph.textContent = paragraph.textContent;
+              paragrapghedit.appendChild(editableParagraph);
+              paragrapghedit.appendChild(document.createElement("br")); // Add a line break
+            });
+          }
+      
+          function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+          }
+      
+          function saveChanges() {
+            
+            var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+            var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+            editedParagraphs.forEach(function (editedParagraph, index) {
+              paragraphs[index].textContent = editedParagraph.textContent;
+            });
+      
+           
+          }
+          function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+          }
+      
+          function saveChanges() {
+            // Update the content of paragraphs on the main page
+            var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+            var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+            editedParagraphs.forEach(function (editedParagraph, index) {
+              paragraphs[index].textContent = editedParagraph.textContent;
+            });
+      
+            // Close the popup
+            closePopup();
+          }
+      
+          function editListItem(index, newValue) {
+            var listItems = document.querySelectorAll("ul li, ol li");
+            listItems[index].textContent = newValue;
+          }
+      
+          function saveToLocalStorage(key, value) {
+            localStorage.setItem(key, value);
+          }
+      
+      
+      
+      
+        </script>
+    </html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Srilankan-Leopard</title>
+    <link rel="icon" href="../fav.io/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link href='../css/leopard CSS.css ' rel='stylesheet'>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="manifest" href="manifest.json">
+    <script src="HOME.js"></script>
+    <main>
+      
+    </main>
+  </head>
+<body>  
+   
+<section class="grid-container"> 
+    <img src="../img/leopard resting on a tree.jpg" alt="Wallpaper" class="responsive"> 
+    
+
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="Wildlife.html">Wild Life</a>
+      <a href="Srilankan_Leopard.html">Leopard</a>
+      <a href="conservation.html">Conservation</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Yala_national_Park.html">Yala National Park</a>
+      <a href="Willpattu_National_Park.html">Wilpattu National park</a>
+      <a href="Contact_Us.html">Login</a>
+    </nav>
+  <nav class="top-right">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  </nav>
+    
+    <nav id="myTopnav">
+      <ul>
+        <li><a class="navw" href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="navw" href="Wildlife.html">Wild Life</a>
+          <ul class="dropdown-content">
+              <li><a class="navw" href="Srilankan_Leopard.html">Leopard</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a class="navw" href="Destinations.html">Destinations</a>
+        <ul class="dropdown-content">
+            <li><a class="navw" href="Yala_national_Park.html">Yala National Park</a></li>
+            <li><a  class="navw"href="Willpattu_National_Park.html">Wilpattu National park</a></li>
+         </ul>
+      </li>
+        <li><a class="navw"href="conservation.html">Conservation</a></li>
+       
+       
+        <li><a class="navw" href="Contact_Us.html">Login</a></li>
+      </ul>
+  </nav>
+    <figure class="logo">
+        <img src="../img/logo.png" alt="Logo " >
+        </figure>
+      </section>
+      <style>
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px); /* Apply blur effect */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .popup-content {
+            background-color:#b5bc76bd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            overflow: auto;
+            max-height: 80vh; 
+            overflow-y: auto;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+<div x-data ="leopard">
+
+      <h2  x-text="maintitle" class="headname"></h2><!--maintitle-->
+    
+      <h2 ><p x-html="intro" class="introduction" style="font-size: 3.0vw;"><br><br>  </h2> <!--"intro"-->
+      <ul></ul><br>
+    </p>  
+        
+      <article x-html="places" class="paragraph"><!--places-->
+      </article>
+         
+       
+       
+      
+         <h2 x-text="maintopic1"></h2><br><!--maintopic1-->
+         <h3 x-text="topic1"></h3><!--topic1-->
+         <article class="paragraph">
+         <p x-html="description1">
+          </p><!--description1-->
+          
+     <img src="../img/leopard poaching.jpg" alt="Hortain Plains">
+     </article>    
+       
+      <section class="Home"> 
+         <Home_animation class="anime5">
+          
+          </Home_animation>
+      </section>
+    
+      <h3 x-text="topic2"></h2><!--topic2-->
+      <article class="paragraph4">
+       <p><h4 x-html="description2">
+        
+
+      </h4>
+    </p><!--description2-->
+         
+          <img src="../img/leopard near city lights.webp" alt="Infant baby deer been fed">
+          <img src="../img/leopard_near apartment building.webp" alt="Infant baby deer been fed">
+        
+  
+
+    </article>
+      
+     <h2 x-text="maintopic2"></h2><br><!--maintopic2--> 
+    
+   
+
+      <article class="paragraph">
+        <h3 x-text="topic3"></h3><!--topic3--> 
+      <p x-html="description3"><!--description3-->
+      </article>
+      <article class="paragraph">
+        <h3 x-text="topic4"></h3><!--topic4-->
+        <p x-html="description4"><!--description4-->
+        </article>
+
+        <article class="paragraph">
+          <h3 x-text="topic5"></h3><!--topic5-->
+        <p x-html="description5"> </p>
+        <br><br><!--description5-->
+      </article>
+    
+    
+     
+      
+      </article>
+      <article class="paragraph">
+      <h3 x-text="maintopic3"></h3><!--maintopic3--> 
+
+   
+        
+      <p ><a href="https://www.wwct.org/the-leopard-project">WWCT(Click here for more info)</a></p><br><br><!--description5-->
+      <p ><a href="https://www.leopocon.org/"> Leopocon Sri Lanka(Click here for more info)</a></p><br><br><!--description6-->
+    </div>
+     
+  </body>  
+  </article>
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <h2>Edit Content</h2>
+      <ul id="topicsedit"></ul>
+      <div id="paragrapghedit"></div>
+      <button onclick="saveChanges()">Save Changes</button>
+    </div>
+  </div>
+
+  <button id="editButton" onclick="openPopup()" style="position: fixed; bottom: 20px; right: 20px;">Edit</button>
+
+  <script>
+  const leopard ={
+    maintitle: '',
+    intro: '',
+    places:'',
+
+    maintopic1:'',
+    topic1:'',
+    description1:'',
+    
+    maintopic2:'',
+    topic2:'',
+    description2:'',
+
+    topic3:'',
+    description3:'',
+    
+    topic4:'',
+    description4:'',
+
+    topic5:'',
+    description5:'',
+
+    maintopic3:''
+    
+
+
+
+};
+
+fetch('srilankan_Leopard.json')
+    .then(response => response.json())
+    .then(data => {
+      leopard.maintitle= data.maintitle;
+      leopard.intro = data.intro;
+      leopard.places=data.places;
+
+      leopard.maintopic1=data.maintopic1;
+      leopard.topic1=data.topic1;
+      leopard.description1=data.description1;
+
+      leopard.maintopic2=data.maintopic2;
+      leopard.topic2=data.topic2;
+      leopard.description2=data.description2;
+
+      leopard.topic3=data.topic3;
+      leopard.description3=data.description3;
+
+      leopard.topic3=data.topic3;
+      leopard.description3=data.description3;
+
+      leopard.topic4=data.topic4;
+      leopard.description4=data.description4;
+
+      leopard.topic5=data.topic5;
+      leopard.description5=data.description5;
+
+      leopard.maintopic3=data.maintopic3;
+
+
+      localStorage.setItem('leopardpage',JSON.stringify(data));
+
+
+
+
+
+    })
+    .catch(error =>console.error('Error fetching data:',error));
+    
+     
+function isLoggedIn() {
+    return localStorage.getItem("loggedInUser") !== null;
+}
+
+
+function toggleEditButtonVisibility() {
+    var editButton = document.getElementById("editButton");
+    editButton.style.display = isLoggedIn() ? "block" : "none";
+}
+
+
+toggleEditButtonVisibility();
+      
+  
+    </script>
+
+    
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Login.js"></script>
+    
+
+
+   <footer>
+     <!--Sri Lankan leopard - Wikipedia. https://en.wikipedia.org/wiki/Sri_Lankan_leopard.
+    (2) Sri Lankan Leopard - Facts, Diet, Habitat & Pictures on Animalia.bio. https://animalia.bio/sri-lankan-leopard.
+    (3) Sri Lankan Leopard Facts | Sri Lanka Wildlife Guide - Nat Hab. https://www.nathab.com/know--->
+     <section class="footer">
+     <section class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+     <a href="#"><i class="fa fa-youtube"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+      </section>
+  
+      <section class="row">
+        <ul>
+          <li><a href="Contact_Us.html">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <section class="footer-newsletter">
+            <br>
+            <form onsubmit="storeNewsLetter(); return false;" class="newsletter-form">
+              <input type="email" id="newsLet" placeholder="subscribe to our NewsLetter" required>
+              <button type="submit"> Subscribe</button>
+    
+          </form>
+          </section>
+        
+        
+        </ul>
+        </section>
+  
+       <section class="row">
+      Wild Life Wonders Copyright © 2023  WLW - All rights reserved || Designed By: CB014172 Dulith
+       </section>
+      </section>
+      </footer>
+      <script>
+  
+        function openPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+    
+          
+    
+          // Fetch and display paragraphs
+          var paragrapghedit = document.getElementById("paragrapghedit");
+          var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+          paragraphs.forEach(function (paragraph) {
+            var editableParagraph = document.createElement("div");
+            editableParagraph.contentEditable = true;
+            editableParagraph.textContent = paragraph.textContent;
+            paragrapghedit.appendChild(editableParagraph);
+            paragrapghedit.appendChild(document.createElement("br")); // Add a line break
+          });
+        }
+    
+        function closePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+          document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+        }
+    
+        function saveChanges() {
+          // Update the content of paragraphs on the main page
+          var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+          var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+          editedParagraphs.forEach(function (editedParagraph, index) {
+            paragraphs[index].textContent = editedParagraph.textContent;
+          });
+    
+          // Close the popup
+          //closePopup();
+        }
+        function closePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+          document.getElementById("paragrapghedit").innerHTML = ""; // Clear paragraphs list
+        }
+    
+        function saveChanges() {
+          // Update the content of paragraphs on the main page
+          var editedParagraphs = document.querySelectorAll("#paragrapghedit div");
+          var paragraphs = document.querySelectorAll("p,h2,ul,ol");
+          editedParagraphs.forEach(function (editedParagraph, index) {
+            paragraphs[index].textContent = editedParagraph.textContent;
+          });
+    
+          // Close the popup
+          closePopup();
+        }
+    
+        function editListItem(index, newValue) {
+          var listItems = document.querySelectorAll("ul li, ol li");
+          listItems[index].textContent = newValue;
+        }
+    
+        function saveToLocalStorage(key, value) {
+          localStorage.setItem(key, value);
+        }
+    
+    
+    
+    
+      </script>
+</html>
